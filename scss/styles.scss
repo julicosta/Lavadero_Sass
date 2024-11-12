@@ -2,20 +2,21 @@
 
 //se lo llama asi:
 
-@import "./utilities/_variables";
-@import "./utilities/_map";
-@import "./utilities/_mixins";
-@import "./utilities/_functions";
+@import "./utilities/variables";
+@import "./utilities/map";
+@import "./utilities/mixins";
+@import "./utilities/functions";
 
 //Por segundo se lo llama a base
 
-@import "./base/_reset";
-@import "./base/_tipografia";
+@import "./base/reset";
+@import "./base/tipografia";
 
 //por tercero se lo llama a los fragmentos de layout
 
-@import "./layout/_header";
-@import "./layout/_mainindex";
+@import "./layouts/header";
+@import "./layouts/mainindex";
+@import "./layouts/footer";
 
 //por cuarto se lo llama a components
 
