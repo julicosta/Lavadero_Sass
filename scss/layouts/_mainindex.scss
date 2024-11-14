@@ -9,10 +9,15 @@ body {
     flex: 1;
     background-color: $negro;
     width: 100%;
+
+    .video {
+      max-width: 68%;
+      margin: 40px auto;
+  }
   
     img {
       width: 100%;
-      height: $headerImgHeight;
+      height: 20.8125rem;
       object-fit: cover;
     }
   
@@ -73,6 +78,7 @@ body {
   
   .btn-try {
     @include button(100px, 3px, $negro, $colorPrincipal);
+    margin: 0 auto;
   }
   
   .section2-about {
@@ -83,7 +89,7 @@ body {
   }
   
   .cols {
-    @include flex-center(column, center, center);
+    @include flex-center(row, center, center);
     width: auto;
     max-width: 500px;
     padding: 25px 20px;
@@ -153,7 +159,7 @@ body {
     }
   
     .detailing-options {
-      @include flex-center(row, center, center);
+      @include flex-center(row, center, none);
   
       .detailing-option {
         flex: 1;
@@ -207,6 +213,15 @@ body {
     place-items: center;
     margin: 20px auto;
   
+    .person {
+      p{
+        @include flex-center(row, center, none);
+        color: #fff;
+        margin-top: 10px;
+        transition: font-size 0.3s ease;
+      }
+    }
+
     img {
       width: 150px;
       height: 150px;
@@ -221,17 +236,99 @@ body {
           0 0 30px rgba(255, 255, 255, 0.5),
           0 0 45px rgba(255, 255, 255, 0.2);
         }
+        &:hover + p {
+          font-size: 20px;
+        }
       }
     }
+
+
+    .row-section1{
+      @include flex-center(row, space-between, start);
+      margin: 40px auto;
+      max-width: 68%;
+
+      .col-izq{
+        @include flex-center(column, none, none, 15px);
+        color: $blanco;
+
+        .col-izq-wpp, .col-izq-mail{
+          @include flex-center(row, none, center, 8px);
+          i {
+            color: $colorPrincipal;
+            font-size: 40px;
+        }
+        }
+      }
+
     .card {
-        display: flex;
-        flex-direction: column;
+      @include flex-center(column, none, center);
         background-color: $colorPrincipalOscuro;
         border-radius: $borderRadius;
-        padding: 15px;
-        gap: 15px;
+        padding: 25px 10px 25px 10px;
         max-width: 50%;
-      
+
+        .book-row1{
+          @include flex-center(column, center, center);
+          margin-bottom: 1.25rem;
+        }
+
+        .book-row2 {
+          display: flex;
+          gap: 30px;
+          margin-bottom: 10px;
+        }
+
+        .book-row3 {
+          display: flex;
+          gap: 30px;
+          margin-bottom: 10px;
+        }
+
+        .book-row4 {
+          display: flex;
+          flex-direction: column;
+          max-width: 363px;
+
+          button {
+            margin-top: 10px;
+            padding: 8px;
+            width: 200px;
+            border: #000 solid 1px;
+            border-radius: .35rem;
+          }
+
+          textarea {
+            min-width: 363px;
+            max-width: 363px;
+            min-height: 20px;
+            max-height: 100px;
+            height: 20px;
+            border: none;
+            background: none;
+            border-bottom: solid 1px #000;
+        }
+        }
+
+        .row4-button {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+      }
+
+        input[type="text"] {
+          border: none;
+          background: none;
+          border-bottom: solid 0.5px #000;
+      }
+
+      .cont-date input[type="date"] {
+        width: 167px;
+        border: none;
+        border-bottom: solid 0.5px #000;
+        background: none;
+    }
+
         h2 {
           color: $blanco;
           font-size: 25px;
@@ -268,3 +365,4 @@ body {
       .button-row {
         @include flex-center(row, center, center);
       }
+    }

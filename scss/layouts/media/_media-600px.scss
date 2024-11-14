@@ -1,0 +1,40 @@
+@media screen and (max-width: 600px) {
+    .section1 img,
+    .section2 img {
+      max-width: 90%;
+    }
+  
+    .footer-container {
+      @include flexDynamic(column, nowrap, center, center, 0);
+      padding: 20px 0;
+      height: auto;
+  
+      .logo-footer {
+        position: static;
+        transform: none;
+        margin-bottom: 20px;
+      }
+  
+      .redes-footer {
+        position: static;
+        transform: none;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+  
+        i {
+          font-size: 1.5rem;
+        }
+      }
+  
+      img[alt="fondo-footer"] {
+        display: none;
+      }
+  
+      img[alt="logo-footer"] {
+        width: 6rem;
+        height: auto;
+      }
+    }
+  }
+  
