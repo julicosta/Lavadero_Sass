@@ -1,5 +1,6 @@
 body {
-    @include flex-center(column, space-around, center);
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     width: 100%;
     margin: 0;
@@ -82,14 +83,14 @@ body {
   }
   
   .section2-about {
-    @include flex-center(row, space-between, center);
+    @include flex-center(row, space-around, center);
     margin: 100px auto;
     gap: 40px;
     max-width: $maxwidth;
   }
   
   .cols {
-    @include flex-center(row, center, center);
+    @include flex-center(row, none, center);
     width: auto;
     max-width: 500px;
     padding: 25px 20px;

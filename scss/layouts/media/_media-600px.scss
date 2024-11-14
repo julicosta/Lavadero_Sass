@@ -1,40 +1,41 @@
 @media screen and (max-width: 600px) {
-    .section1 img,
-    .section2 img {
+
+  .section1, .section2{
+    img{
       max-width: 90%;
     }
-  
-    .footer-container {
-      @include flexDynamic(column, nowrap, center, center, 0);
-      padding: 20px 0;
-      height: auto;
-  
-      .logo-footer {
-        position: static;
-        transform: none;
-        margin-bottom: 20px;
-      }
-  
-      .redes-footer {
-        position: static;
-        transform: none;
-        width: 100%;
-        justify-content: center;
-        gap: 1rem;
-  
-        i {
-          font-size: 1.5rem;
-        }
-      }
-  
-      img[alt="fondo-footer"] {
-        display: none;
-      }
-  
-      img[alt="logo-footer"] {
-        width: 6rem;
-        height: auto;
-      }
-    }
   }
-  
+
+  footer {
+      .footer-container {
+          position: relative; // Cambia a relative en pantallas pequeñas
+          padding: 15px;
+           img[alt=fondo-footer]{
+            display: none;
+           } 
+
+          .logo-footer {
+              position: relative; // Cambia a relative
+              top: auto; // Resetea la posición
+              left: auto; // Resetea la posición
+              transform: none; // Elimina la transformación
+              margin-bottom: 20px; // Añade margen para separación
+          }
+
+          .redes-footer {
+              position: relative; 
+              top: auto; 
+              left: auto; 
+              transform: none; 
+              justify-content: center; 
+              margin-top: 10px; 
+              width: 100%; 
+              gap: 1rem;
+
+              i {
+                  font-size: 1.5rem; // Ajusta el tamaño de los iconos
+              }
+          }
+      }
+  }
+}
