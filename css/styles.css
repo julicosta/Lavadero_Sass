@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 es un bloque de codigo que posee varias propiedas que funcionaran entre si
 */
@@ -513,6 +514,21 @@ footer .footer-container .redes-footer a {
     justify-content: center;
     align-items: center;
     gap: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #section1-team {
+    flex-direction: column;
+  }
+  .team-img-grid {
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+  }
+  .team-img-grid img {
+    width: 150px; /* Reducir el tamaño de las imágenes */
+    height: 150px;
+  }
+  .team-img-grid .person p {
+    font-size: 20px; /* Reducir el tamaño del texto */
   }
 }
 @media screen and (max-width: 800px) {

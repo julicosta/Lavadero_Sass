@@ -1,0 +1,22 @@
+@media screen and (max-width: 1024px) {
+
+    #section1-team{
+        flex-direction: column;
+    }
+
+
+
+    .team-img-grid{
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+        img {
+          width: 150px; /* Reducir el tamaño de las imágenes */
+          height: 150px;
+        }
+    
+        .person p {
+          font-size: 20px; /* Reducir el tamaño del texto */
+        }
+      }
+
+  }
+  
