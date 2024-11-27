@@ -410,6 +410,8 @@ main .home-container .text-container h3 {
   border: none;
   background: none;
   border-bottom: solid 0.5px #000;
+  max-width: 100%;
+  width: 100%;
 }
 .row-section1 .card .cont-date input[type=date] {
   width: 167px;

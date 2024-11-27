@@ -321,6 +321,8 @@ body {
           border: none;
           background: none;
           border-bottom: solid 0.5px #000;
+          max-width: 100%;
+          width: 100%;
       }
 
       .cont-date input[type="date"] {
