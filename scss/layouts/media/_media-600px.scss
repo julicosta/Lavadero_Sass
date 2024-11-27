@@ -6,6 +6,18 @@
     }
   }
 
+.team-img-grid{
+.person{
+  img{
+    width: 100%;
+    max-width: 98%;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    max-height: 98%;
+  }
+}
+}
+
   footer {
       .footer-container {
           position: relative; // Cambia a relative en pantallas pequeñas
