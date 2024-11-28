@@ -265,7 +265,8 @@ main .home-container .text-container h3 {
   max-width: 68%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
 }
 
 .service-img-grid {
