@@ -1,5 +1,16 @@
 @media screen and (max-width: 600px) {
 
+.services-grid{
+  max-width: 100%;
+  margin: 0 20px;
+  h3, h4{
+    font-size: 15px;
+  }
+  li{
+    font-size: 12px;
+  }
+}
+
   main{
     .home-container{
       .text-container{

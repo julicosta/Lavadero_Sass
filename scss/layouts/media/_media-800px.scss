@@ -1,4 +1,16 @@
 @media screen and (max-width: 800px) {
+
+  .container-row-img-services{
+    flex-direction: column;
+
+    .service-img-grid{
+      max-width: 100%;
+    }
+
+  }
+  
+  
+
     .section1,
     .section2 {
       @include flexDynamic(column, nowrap, center, center, 0); // Flex en dirección columna
