@@ -1,4 +1,18 @@
 @media screen and (max-width: 410px) {
+
+  main{
+    .home-container{
+      .text-container{
+        h3{
+          font-size: 15px;
+        }
+        h1{
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
     .cols {
       p {
         font-size: 12px;

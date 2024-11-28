@@ -529,8 +529,21 @@ footer .footer-container .redes-footer a {
   }
 }
 @media screen and (max-width: 1024px) {
+  .video img {
+    object-fit: contain;
+    height: auto;
+  }
   #section1-team {
     flex-direction: column;
+  }
+  .row-section1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .row-section1 .card {
+    margin-top: 30px;
+    max-width: 100%;
   }
   .team-img-grid {
     grid-template-columns: 1fr 1fr; /* Dos columnas */
@@ -610,8 +623,23 @@ footer .footer-container .redes-footer a {
     display: block;
     padding: 0.5rem 0;
   }
+  .row-section1 p {
+    font-size: 12px;
+  }
+  .row-section1 .card .book-row3 {
+    justify-content: space-between;
+  }
+  .row-section1 .card h2 {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
+  main .home-container .text-container {
+    width: 80%;
+  }
+  main .home-container .text-container h3 {
+    font-size: 20px;
+  }
   .section1 img, .section2 img {
     max-width: 90%;
   }
@@ -651,6 +679,12 @@ footer .footer-container .redes-footer a {
   }
 }
 @media screen and (max-width: 410px) {
+  main .home-container .text-container h3 {
+    font-size: 15px;
+  }
+  main .home-container .text-container h1 {
+    font-size: 40px;
+  }
   .cols p {
     font-size: 12px;
   }
